@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: radial-gradient(circle at center ,rgb(202, 64, 83),  black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+.container{
+    display: grid;
+     grid-template-columns: repeat(4,200px);
+     grid-template-rows: repeat(3,150px);
+     gap: 20px;
+    
+}
+.cards{
+    background-color: rgba(255, 255, 255, 0.6);
+     border-radius: 25px;
+    border: 1px solid rgb(77, 68, 68);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+   
+
+}
+.one{
+    grid-column: span 2;
+    grid-row: span 2;
+    
+
+}
+.two{
+    grid-row: span 2;
+}
+.five{
+    grid-column: span 3;
+}
+.cards:hover{
+    background: rgb(255, 255,255 ,0.7);
+    border-color: rgb(255, 255,255 ,0.2);
+    transform: translatey(-5px) scale(1.03) ;
+    box-shadow: 0 20px  40px rgb(0, 0, 0,0.4);
+}
